@@ -16,25 +16,25 @@
 class Kaisin < Formula
   desc "Self-hosted application platform built on Kubernetes"
   homepage "https://kaisin.sh"
-  version "1.1.458"
+  version "1.1.460"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bluepawlabs/homebrew-kaisin/releases/download/v#{version}/kaisin-#{version}-osx-arm64.tar.gz"
-      sha256 "a2bc8a973b5179745cc73d6214c64d94918de512d5652c5a9fe1e0e8605d38d3"
+      sha256 "c38c42d4fd132e267da28eb64159617ffba540cff98725aac43fdf57b86ab7d9"
     else
       url "https://github.com/bluepawlabs/homebrew-kaisin/releases/download/v#{version}/kaisin-#{version}-osx-x64.tar.gz"
-      sha256 "340a95fc5df5f16693d5fbfc7609fa70f2d20ef57822d3a2279489cf6f703375"
+      sha256 "44733aa2f5002e9d6b01b80910a2c85fca4c9cd3c1584d9da9fe480b80864f82"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/bluepawlabs/homebrew-kaisin/releases/download/v#{version}/kaisin-#{version}-linux-arm64.tar.gz"
-      sha256 "320424c9a86f564d9aa1630d244d8384905329d7a756849496eeed90093813d0"
+      sha256 "47db94f6e9533bcf54e164be42adfaf99e90e2ee417e31e50e321c2a2d711dd2"
     else
       url "https://github.com/bluepawlabs/homebrew-kaisin/releases/download/v#{version}/kaisin-#{version}-linux-x64.tar.gz"
-      sha256 "6d534d36f727868aae8b2c9a2e3305613603a3cc0dc0b1b12fce24c1a35bf924"
+      sha256 "d1bcae1c7a653fc908c13666a754c3f32afdf9b6ee75c09c83139deb960d71fc"
     end
   end
 
